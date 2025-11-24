@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 // \n
+// p.61 (p.86)
 
 int main(void)
 {
