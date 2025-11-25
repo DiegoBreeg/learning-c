@@ -9,7 +9,7 @@ int pos_y[MAX_ENTITIES];
 char glyph[MAX_ENTITIES];
 
 // \n
-// p.61 (p.125)
+// p.61 (p.133)
 
 void render()
 {
