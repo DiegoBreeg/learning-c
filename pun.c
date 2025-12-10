@@ -2,46 +2,18 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-#define MAX_ENTITIES 5
-
-int pos_x[MAX_ENTITIES];
-int pos_y[MAX_ENTITIES];
-char glyph[MAX_ENTITIES];
-
 // \n
 // p.61 (p.133)
 
-void render()
-{
-
-    for (int x = 0; x < 10; x++)
-    {
-        for (int y = 0; y < 10; y++)
-        {
-            char render = '.';
-
-            for(int e = 0; e < MAX_ENTITIES; e++)
-            {
-                if(pos_x[e] == x && pos_y[e] == y) render = glyph[e];
-            }
-
-            printf("%c ", render);
-
-        }
-        printf("\n");
-        printf("\n");
-    }
-
-    return;
-}
-
 int main(void)
 {
-    pos_x[0] = 5;
-    pos_y[0] = 3;
-    glyph[0] = '@';
+    int prompt;
 
-    render();
+    for (;;)
+    {
+        printf("Selecione um comando");
+        scanf("%d", &prompt);
+    }
 
     return 0;
 }
